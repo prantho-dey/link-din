@@ -1,0 +1,157 @@
+
+.profile-section {
+    .profile-card {
+        position: relative;
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: 10px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url('../img/profile-bg.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 50px;
+            top: 0;
+            left: 0;
+            border-radius: 10px 10px 0 0;
+        }
+        .pro-img {
+            border-bottom:1px solid rgb(167 167 167 / 60%);
+            padding-top: 15px;
+            padding-left: 12px;
+            padding-right: 12px;
+            img {
+                width: 70px;
+                border-radius: 50%;
+                height: auto;
+                margin: auto;
+                display: block;
+                z-index: 99;
+                position: relative;
+                border: 2px solid #fff;
+            }
+            a {
+                margin-top: 10px;
+                display: block;
+                color: #000;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            p {
+                margin-top: 4px;
+                color: rgb(0 0 0 / 60%);
+                font-size: 14px;
+                font-weight: 300;
+                margin-bottom: 7px;
+            }
+        }
+        .pro-content {
+            .single-item {
+                border-bottom: 1px solid rgba(167, 167, 167, 0.6);
+                @include transition(0.3s);
+
+                &:hover {
+                    background-color: rgba(197, 197, 197, 0.6);
+                }
+
+                a {
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    display: block;
+                    font-size: 13px;
+                    color: #707070;
+                    font-weight: 500;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    span {
+                        float: right;
+                    }
+                    p {
+                        font-weight: 600;
+                        color: #000;
+
+                        i {
+                            color: #F8C77E;
+                            margin-right: 7px;
+                        }
+                    }
+                    .my-work {
+                        font-weight: 700;
+                        i {
+                            color: #000;
+                        }
+                    }
+                }
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+    .discover-card {
+        position: relative;
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: 10px;
+        padding: 0 12px;
+        margin-top: 10px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 1.02px;
+            background-color: rgba(167, 167, 167, 0.6);
+            bottom: 40px;
+            left: 0;
+        }
+
+        a {
+            display: block;
+            padding-top: 10px;
+            font-size: 14px;
+            color: #0a66c2;
+            font-weight: 600;
+
+            i {
+                float: right;
+                color: #000;
+                font-size: 16px;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 25px;
+                @include transition(0.3s);
+
+                &:hover {
+                    background-color: rgb(223, 223, 223);
+                    text-decoration: revert !important;
+                    text-decoration: none;
+                }
+            }
+        }
+        .more {
+            a {
+                padding-bottom: 10px;
+                padding-top: 5px;
+                margin-top: 5px;
+                color: rgb(77, 77, 77);
+                display: block;
+                font-size: 16px;
+                font-weight: 500;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

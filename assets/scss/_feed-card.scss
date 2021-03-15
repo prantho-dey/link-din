@@ -1,0 +1,150 @@
+.feed-card {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 10px;
+    padding: 12px;
+
+    p {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(0 0 0 / 90%);
+        margin-bottom: 20px;
+
+        i {
+            float: right;
+            font-size: 9px;
+            background-color: gray;
+            width: 14px;
+            height: 14px;
+            line-height: 14px;
+            text-align: center;
+            color: #fff;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-top: 4px;
+        }
+    }
+
+    .single-feed {
+        .feed-image {
+            margin-right: 10px;
+            img {
+                border-radius: 50%;
+                width: 50px;
+            }
+        }
+        .feed-content {
+            a {
+                font-size: 13px;
+                font-weight: bold;
+                color: rgb(0 0 0 / 90%);
+                text-transform: capitalize;
+                margin: 0;
+                padding: 0;
+
+                span {
+                    display: block;
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: gray;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                }
+                
+            }
+            
+        }
+        .feed-button {
+            a {
+                font-size: 17px !important;
+                display: inline-block;
+                color: rgb(0 0 0 / 60%)!important;
+                font-weight: 600 !important;
+                border: 1px solid rgb(0 0 0 / 60%);
+                padding: 5px 20px !important;
+                border-radius: 100px;
+                margin-top: 3px !important;
+        
+                i {
+                    color: black;
+                    font-weight: 500;
+                }
+        
+                &:hover {
+                    border: 1px solid #7d7d7d;
+                    background-color: rgb(207 207 207 / 60%);
+                }
+            }
+        }
+    }
+    
+    .feed-bottom a {
+        color: rgb(0 0 0 / 60%);
+        font-size: 15px;
+        font-weight: bold;
+        display: inline-block;
+        background-color: transparent;
+        padding: 2px 5px;
+        border-radius: 6px;
+
+        &:hover {
+            background-color: rgb(207 207 207 / 60%);
+            text-decoration: none;
+        }
+    }
+
+    // Card 2 Stayle
+    .feed-items {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                a {
+                    font-size: 14px;
+                    color: rgb(71, 71, 71);
+                    font-weight: 600;
+                    display: block;
+                    margin-top: 10px;
+                    span {
+                        display: block;
+                        font-size: 12px;
+                        font-weight: 300;
+                    }
+                    &:hover{
+                        text-decoration: none;
+                        background-color: rgb(243, 243, 243);
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+.feed-bootom-links {
+    a {
+        font-size: 12px;
+        color: #515151;
+        font-weight: 400;
+        display: inline-block;
+        margin: 5px;
+
+        &:hover {
+            color: #0a66c2;
+        }
+    }
+}
+.copyright {
+    img {
+        width: 60px;
+    }
+    p {
+        font-size: 14px;
+        color: #000;
+    }
+}

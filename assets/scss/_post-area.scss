@@ -1,0 +1,235 @@
+.post-area {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 10px;
+
+    a {
+        font-size: 14px;
+        font-weight: 600;
+        color: #000;
+        margin: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #ebebeb;
+        display: block;
+
+        &:hover {
+            text-decoration: none;
+        }
+        &:hover i {
+            color: #000;
+            text-decoration: none;
+            display: inline-block;
+        }
+        span {
+            font-weight: 300;
+            margin-left: 5px;
+        }
+        i {
+            float: right;
+            color: #666666;
+            font-size: 20px;
+            font-weight: 400;
+            width: 30px;
+            height: 24px;
+            text-align: center;
+            line-height: 23px;
+            border-radius: 50%;
+            @include transition(0.3s);
+            &:hover {
+                background-color: #ebebeb;
+            }
+        }
+    }
+
+    .post-content {
+        .content-profile {
+            padding: 12px;
+            padding-top: 0;
+            margin-bottom: 10px;
+    
+            .profile-image {
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+            }
+            .profile-title {
+                a {
+                    font-weight: 700;
+                    margin: 0;
+                    border-bottom: 0;
+                    padding-bottom: 0;
+    
+                    p {
+                        display: inline-block;
+                        font-weight: 400;
+                        color: #b4b4b4;
+                        cursor: context-menu;
+                    }
+                }
+                p {
+                    font-size: 14px;
+                    color: #b4b4b4;
+                    padding-bottom: 0;
+                    margin: 0;
+                }
+            }
+        }
+        .profile-say {
+            padding-left: 12px;
+            padding-right: 12px;
+
+            p {
+                display: inline-block;
+                color: #000;
+                font-size: 14px;
+                font-weight: 600;
+                padding: 0;
+                margin: 0;
+            }
+            a {
+                margin: 0;
+                color: #0a66c2;
+                padding-bottom: 10px;
+                display: inline-block;
+                border-bottom: 0;
+                font-weight: bold;
+            }
+        }
+
+    }
+    .post-image {
+        a {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .post-react {
+        padding: 12px;
+        padding-bottom: 10px;
+        .post-react-number {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #d3d3d3;
+            padding-bottom: 10px;
+            a {
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+                border-bottom: none;
+
+                i {
+                    float: left;
+                    font-size: 12px;
+                    width: 18px;
+                    height: 18px;
+                    background-color: #a7300b;
+                    text-align: center;
+                    line-height: 18px;
+                    color: #fff;
+                    margin-right: 5px;
+                }
+            }
+            .like-num {
+                i {
+                    background-color: #0a66c2;
+                }
+            }
+            .hand-shake {
+                i {
+                    background-color: #478631;
+                }
+            }
+            .number {
+                font-size: 14px;
+                color: black;
+                font-weight: 300;
+                margin-right: 10px;
+            }
+        }
+        .post-react-items {
+            .like {
+                position: relative;
+
+                &:hover > .react-items {
+                    visibility: visible;
+                    opacity: 1;
+                }
+                .react-items {
+                    position: absolute;
+                    background-color: #fff;
+                    box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 4px 6px rgb(0 0 0 / 20%);
+                    border-radius: 50px;
+                    width: 300px;
+                    height: 50px;
+                    top: -60px;
+                    left: -50%;
+                    z-index: 999;
+                    opacity: 0;
+                    visibility: hidden;
+                    @include transition(0.4s);
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+
+                        li {
+                            display: inline-block;
+                            width: 30px;
+                            margin-top: 9px;
+                            @include transition(0.3s);
+
+                            &:hover {
+                                transform: scale(1.7);
+                            }
+                        }
+                    }
+                }
+               
+            }
+            a {
+                display: inline-block;
+                border-bottom: 0;
+                text-align: center;
+                background-color: transparent;
+                padding: 10px 10px;
+                padding-left: 30px;
+                margin-bottom: 0;
+                border-radius: 9px;
+                margin-right: 5px;
+                margin-left: 0;
+                position: relative;
+                margin-top: 5px;
+
+
+                i {
+                    float: left;
+                    height: inherit;
+                    width: inherit;
+                    line-height: inherit;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 5px;
+
+                    &:hover {
+                        background: none;
+                    }
+                }
+
+                &:hover {
+                    background-color: #e1e1e1;
+                    color: black;
+                }
+            }
+           
+        }
+    }
+}

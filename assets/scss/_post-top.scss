@@ -1,0 +1,131 @@
+.post-top{
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 10px;
+    padding: 10px 15px;
+
+    .post-start {
+        img {
+            width: 55px;
+            border-radius: 50%;
+            height: 55%;
+            margin-right: 10px;
+        }
+        input {
+            height: 50px;
+            width: 440px;
+            border-radius: 40px;
+            position: relative;
+            border-width: 0;
+            border: 1px solid #d9d9d9;
+            padding: 0 20px;
+
+            &:focus {
+                background-color: #EBEBEB;
+            }
+            &:hover {
+                background-color: #EBEBEB;
+            }
+
+            &::-moz-placeholder {
+                color: #919191;
+                font-size: 16px;
+                opacity: 1;
+            }
+            
+            &::placeholder {
+                color: #919191;
+                font-size: 16px;
+                opacity: 1;
+            }
+        }
+    }
+    .post-watch {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            display: block;
+            padding: 10px;
+            border-radius: 7px;
+            color: #828282;
+
+            &:hover {
+                background-color: #EBEBEB;
+                text-decoration: none;
+            }
+        }
+        .photo {
+            i {
+                color: #70B5F9;
+            }
+        }
+        .video {
+            i {
+                color: #7FC15E;
+            }
+        }
+        .event {
+            i {
+                color: #E7A33E
+            }
+        }
+        .write {
+            i {
+                color: #F5987E;
+            }
+        }
+    }
+}
+
+.short-by {
+    a {
+        font-size: 14px;
+        color: #bfbfbb;
+        padding: 10px 0;
+        display: block;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 76%;
+            height: 0.1px;
+            background: #bfbfbb;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+
+        .option {
+            position: relative;
+            width: 49px;
+            height: auto;
+            border: 0;
+            -moz-appearance: none;
+            appearance: none;
+            background: transparent;
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: 5px;
+
+            &:focus {
+                outline-width: 0;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                font-family: "Font Awesome 5 Pro";
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 18px;
+                color: #fff;
+                right: 20px;
+            }
+        }
+        i {
+            color: #000;
+        }
+    }
+}
